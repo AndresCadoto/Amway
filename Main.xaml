@@ -207,5 +207,61 @@
         </If>
       </Sequence>
     </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">310,386.04</av:Point>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence DisplayName="eGain" sap:VirtualizedContainerService.HintSize="526,504" sap2010:WorkflowViewState.IdRef="Sequence_6">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Boolean" Name="OpenEgain" />
+          <Variable x:TypeArguments="x:String" Name="Usr">
+            <Variable.Default>
+              <Literal x:TypeArguments="x:String">COLKMH0</Literal>
+            </Variable.Default>
+          </Variable>
+          <Variable x:TypeArguments="x:String" Name="Psw">
+            <Variable.Default>
+              <Literal x:TypeArguments="x:String">Amway123</Literal>
+            </Variable.Default>
+          </Variable>
+          <Variable x:TypeArguments="x:Boolean" Name="LogineGain" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Open Egain workflow" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Open Egain\Open Egain.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <OutArgument x:TypeArguments="x:Boolean" x:Key="ExisteEgain">
+              <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="OpenEgain" />
+            </OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="Url">
+              <Literal x:TypeArguments="x:String">https://amwaycs.egain.cloud/system/web/apps/login/?localLogin=true</Literal>
+            </InArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+        <If Condition="[OpenEgain]" sap:VirtualizedContainerService.HintSize="484,260" sap2010:WorkflowViewState.IdRef="If_7">
+          <If.Then>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Login Egain workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Login Egain\Login Egain.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ExisteEgain">
+                  <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="LogineGain" />
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Contraseña">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Psw" />
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="Usuario">
+                  <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="Usr" />
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </If.Then>
+        </If>
+      </Sequence>
+    </FlowStep>
   </Flowchart>
 </Activity>
