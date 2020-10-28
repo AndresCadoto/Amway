@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Log_Out_eGain" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="880,809" sap2010:WorkflowViewState.IdRef="Log_Out_eGain_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Log_Out_eGain" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="816,849" sap2010:WorkflowViewState.IdRef="Log_Out_eGain_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="abde1bd8-2801-4be2-81be-8c1e4571cfe3" InformativeScreenshot="0adb91e6d6a76d8b75af75c179163615" Selector="&lt;webctrl aria-role='presentation' id='button-1036-btnWrap' tag='SPAN' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="abde1bd8-2801-4be2-81be-8c1e4571cfe3" InformativeScreenshot="0adb91e6d6a76d8b75af75c179163615" Selector="&lt;webctrl id='button-1036-btnInnerEl' tag='SPAN' /&gt;&#xD;&#xA;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -97,7 +97,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c360e801-8f13-4baf-b0e4-00f9608f0048" InformativeScreenshot="87d1b48b09846987ccdb33025f931e49" Selector="&lt;webctrl aria-role='menuitem' id='menuitem-1052-itemEl' tag='A' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c360e801-8f13-4baf-b0e4-00f9608f0048" InformativeScreenshot="87d1b48b09846987ccdb33025f931e49" Selector="&lt;webctrl aria-role='presentation' id='menuitem-1052-textEl' tag='SPAN' /&gt;&#xD;&#xA;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>

@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>880,1387</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>816,1427</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login_Egain_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -166,7 +166,7 @@
             </ui:Click>
             <ui:UiElementExists DisplayName="Elemento existente 'IMG'" Exists="[ExisteEgain]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b34777e-7d63-480b-9d38-edd5f6ba54c1" InformativeScreenshot="37863abdf1eb4377dcb7a5311042e287" Selector="&lt;webctrl parentid='button-1011-btnInnerEl' tag='IMG' /&gt;" TimeoutMS="15000">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9b34777e-7d63-480b-9d38-edd5f6ba54c1" InformativeScreenshot="37863abdf1eb4377dcb7a5311042e287" Selector="&lt;webctrl parentid='button-1011-btnInnerEl' tag='IMG' /&gt;" TimeoutMS="20000">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
